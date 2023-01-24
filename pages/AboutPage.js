@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image';
 export default function AboutPage({invert}) {
 	console.log(invert);
 	return (
@@ -8,7 +9,7 @@ export default function AboutPage({invert}) {
 				<section className="text-gray-600 body-font overflow-hidden">
 					<div className="container px-5 py-24 mx-auto">
 						<div className="lg:w-[70%] mx-auto flex flex-wrap">
-							<img alt="ecommerce" className={`${invert?"invert":""} lg:w-1/3  w-full h-full my-auto object-contain object-center rounded`} src="/images/about.jpeg" />
+							<Image placeholder="blur" alt="ecommerce" className={`${invert?"invert":""} lg:w-1/3  w-full h-full my-auto object-contain object-center rounded`} src="/images/about.jpeg" />
 							<div className="lg:w-2/3 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
 								<h1 className="text-2xl font-medium title-font mb-4 text-gray-600 tracking-widest">ABOUT US</h1>
 								<div className="flex mb-4">
@@ -34,7 +35,7 @@ export default function AboutPage({invert}) {
 						<div className="flex flex-wrap -m-4">
 							<div className="p-4 lg:w-1/2">
 								<div className={`h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ${invert?"invert":""}`}>
-									<img alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/akhilesh.jpeg"/>
+									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/akhilesh.jpeg"/>
 									<div className="flex-grow sm:pl-8">
 										<h2 className="title-font font-medium text-lg text-gray-600">Akhilesh Panchamgam</h2>
 										<h3 className="text-gray-500 mb-3">Team Lead</h3>
@@ -51,7 +52,7 @@ export default function AboutPage({invert}) {
 							</div>
 							<div className="p-4 lg:w-1/2">
 								<div className={`h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ${invert?"invert":""}`}>
-									<img alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/pradeep.jpeg"/>
+									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/pradeep.jpeg"/>
 									<div className="flex-grow sm:pl-8">
 										<h2 className="title-font font-medium text-lg text-gray-600">Pradeep Kumar Rebbavarpu</h2>
 										<h3 className="text-gray-500 mb-3">Member</h3>
@@ -68,7 +69,7 @@ export default function AboutPage({invert}) {
 							</div>
 							<div className="p-4 lg:w-1/2">
 								<div className={`h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ${invert?"invert":""}`}>
-									<img alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/suhana.jpeg"/>
+									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/suhana.jpeg"/>
 									<div className="flex-grow sm:pl-8">
 										<h2 className="title-font font-medium text-lg text-gray-600">Suhana Shaik</h2>
 										<h3 className="text-gray-500 mb-3">Member</h3>
@@ -85,7 +86,7 @@ export default function AboutPage({invert}) {
 							</div>
 							<div className="p-4 lg:w-1/2">
 								<div className={`h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ${invert?"invert":""}`}>
-									<img alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/trishant.jpeg"/>
+									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/trishant.jpeg"/>
 									<div className="flex-grow sm:pl-8">
 										<h2 className="title-font font-medium text-lg text-gray-600">Trishant Kumar Talluri</h2>
 										<h3 className="text-gray-500 mb-3">Member</h3>
