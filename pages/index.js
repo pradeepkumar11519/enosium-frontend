@@ -25,7 +25,7 @@ export default function Home({loading,setloading,setProgress}) {
 		}
 		setProgress(40)
 		setdata(new_data)
-		await axios.post("http://127.0.0.1:8000/api/v1/Get_User_Input/",
+		await axios.post("https://pradeep11519.pythonanywhere.com/api/v1/Get_User_Input/",
 			new_data
 		
 
