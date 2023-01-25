@@ -25,7 +25,7 @@ export default function Home({loading,setloading,setProgress}) {
 		}
 		setProgress(40)
 		setdata(new_data)
-		await axios.post("https://pradeep11519.pythonanywhere.com/api/v1/Get_User_Input/",
+		await axios.post("http://127.0.0.1:8000/api/v1/Get_User_Input/",
 			new_data
 		
 
@@ -110,7 +110,7 @@ export default function Home({loading,setloading,setProgress}) {
 								<div className=' invert absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-500 blur'></div>
 								<select className='relative bg-white   p-3 font-bold' >
 									{
-										['all loans at this bank paid back duly', 'critical account/other loans existing (not at this bank)', 'delay in paying off loans in the past', 'existing loans paid back duly till now', 'no loans taken/allloans paid back duly'].map(ele => <option key={ele} className='font-bold p-3'>{ele}</option>)
+										['all loans at this bank paid back duly', 'critical account/other loans existing (not at this bank)', 'delay in paying off loans in the past', 'existing loans paid back duly till now','no loans taken/all loans paid back duly'].map(ele => <option key={ele} className='font-bold p-3'>{ele}</option>)
 
 									}
 								</select>
