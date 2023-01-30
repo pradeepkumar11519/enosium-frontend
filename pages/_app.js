@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import '@/styles/globals.css'
 import { useState } from 'react';
 import LoadingBar from 'react-top-loading-bar'
+import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import React from 'react';
 import { useRouter } from 'next/router';

@@ -6,7 +6,7 @@ import axios from 'axios'
 import { AiFillCloseSquare } from 'react-icons/ai'
 import Modal from 'react-modal';
 import Zoom from 'react-reveal/Zoom';
-import 'react-toastify/dist/ReactToastify.css';
+
 import { toast } from 'react-toastify'
 import Success from '../public/images/Success.png'
 import Failure from '../public/images/Failure.png'
