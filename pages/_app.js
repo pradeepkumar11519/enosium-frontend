@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import React from 'react';
 import { useRouter } from 'next/router';
+import Footer from '@/components/Footer';
 
 
 export default function App({ Component, pageProps }) {
@@ -44,6 +45,7 @@ export default function App({ Component, pageProps }) {
             />
       
       <Component CloseOffCanvasNavbar={CloseOffCanvasNavbar} setProgress={setProgress} loading={loading} setloading={setloading} invert={invert} {...pageProps} />
+      <Footer/>
     </div>
   
   )
