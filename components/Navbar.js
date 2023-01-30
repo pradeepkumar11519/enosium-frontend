@@ -13,10 +13,12 @@ export default function Navbar({ invert, setinvert,CloseOffCanvasNavbar }) {
 	return (
 		<div>
 			<div className='flex justify-between py-3 border-2 bg-black border-black'>
+				<Link href="/">
 				<div className='text-white my-auto mx-5 w-fit flex'>
 					<Image src={Logo} className="w-16"  />
 					<h1 className='my-auto font-bold tracking-widest'>TYROS</h1>
 				</div>
+				</Link>
 				<div className='hidden md:block'>
 					<ul className='flex my-auto mt-2'>
 						<li className='border-2 border-white text-white mx-5 p-2 rounded-md font-bold hover:scale-105 transition-all fade-in-out '><Link href="/">HOME</Link></li>

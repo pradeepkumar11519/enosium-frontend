@@ -1,23 +1,40 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
+import About from '../public/images/about.jpeg'
+import Akhilesh from '../public/images/akhilesh.jpeg'
+import Pradeep from '../public/images/pradeep.jpeg'
+import Trishant from '../public/images/trishant.jpeg'
+import Suhana from '../public/images/suhana.jpeg'
+import Fade from 'react-reveal/Fade';
+import { TypeAnimation } from 'react-type-animation';
 export default function AboutPage({invert}) {
 	console.log(invert);
 	return (
 		<div>
+			
 			<div className=" bg-black text-white">
+			<h1 className="text-4xl font-medium title-font bg-blacktext-white uppercase tracking-widest text-center py-16 font-bold">ABOUT US</h1>
 				<section className="text-gray-600 body-font overflow-hidden">
-					<div className="container px-5 py-24 mx-auto">
-						<div className="lg:w-[70%] mx-auto flex flex-wrap">
-							<Image placeholder="blur" alt="ecommerce" className={`${invert?"invert":""} lg:w-1/3  w-full h-full my-auto object-contain object-center rounded`} src="/images/about.jpeg" />
-							<div className="lg:w-2/3 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-								<h1 className="text-2xl font-medium title-font mb-4 text-gray-600 tracking-widest">ABOUT US</h1>
+					<div className="container px-5 py-0 mx-auto">
+						<div className="lg:w-[70%] lg:grid grid-cols-2 mx-auto flex flex-wrap">
+							<Image placeholder="blur" alt="ecommerce" className={`${invert?"invert":""} lg:w-full  w-full h-full my-auto object-contain object-center rounded`} src={About} />
+							<div className="lg:w-full w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+								
 								<div className="flex mb-4">
 									<span className="flex items-center">
 										<svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" ststrokeWidth="2" className="w-4 h-4 text-indigo-500" viewBox="0 0 24 24" />
 									</span>
 								</div>
-								<p className="leading-relaxed text-lg text-white">Welcome To Our Website Namely Called Tyros . Starting with the Introduction , Our Website Takes In Required Inputs From The User Sends It To The Backend Through An API Call From The Frontend And The Backend Therefore Sends The Same Data Well A Bit Formatted Type Data To The Trained Model And Then Returns The Predicted Output . Lets Speak On The Tools Used , Frontend Is Done On Next.js , Backend is Done On Django . Hope You Liked It Do Know More About Us Below.
+								<p className="leading-relaxed text-lg text-white text-center">
+								<TypeAnimation
+    sequence={['Welcome To Our Website Namely Called Tyros . Starting with the Introduction , Our Website Takes In Required Inputs From The User Sends It To The Backend Through An API Call From The Frontend And The Backend Therefore Sends The Same Data Well A Bit Formatted Type Data To The Trained Model And Then Returns The Predicted Output . Lets Speak On The Tools Used , Frontend Is Done On Next.js , Backend is Done On Django . Hope You Liked It Do Know More About Us Below.', 1000, 'Welcome To Our Website Namely Called Tyros . Starting with the Introduction , Our Website Takes In Required Inputs From The User Sends It To The Backend Through An API Call From The Frontend And The Backend Therefore Sends The Same Data Well A Bit Formatted Type Data To The Trained Model And Then Returns The Predicted Output . Lets Speak On The Tools Used , Frontend Is Done On Next.js , Backend is Done On Django . Hope You Liked It Do Know More About Us Below.']}
+    speed={120} 
+	omitDeletionAnimation={true}
+    deletionSpeed={99}
+    wrapper="h2"
+    repeat={false}
+  />
 								</p>
 							</div>
 						</div>
@@ -30,12 +47,16 @@ export default function AboutPage({invert}) {
 				<section className="text-gray-300 body-font">
 					<div className="container px-5 py-24 mx-auto">
 						<div className="flex flex-col text-center w-full mb-20">
-							<h1 className="text-2xl font-medium title-font mb-4 text-gray-600 tracking-widest">OUR TEAM</h1>
+							<h1 className="text-2xl font-medium title-font mb-4 text-white font-bold tracking-widest">OUR TEAM</h1>
 						</div>
+						
 						<div className="flex flex-wrap -m-4">
+						
 							<div className="p-4 lg:w-1/2">
+							<Fade>
+							
 								<div className={`h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ${invert?"invert":""}`}>
-									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/akhilesh.jpeg"/>
+									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src={Akhilesh}/>
 									<div className="flex-grow sm:pl-8">
 										<h2 className="title-font font-medium text-lg text-gray-600">Akhilesh Panchamgam</h2>
 										<h3 className="text-gray-500 mb-3">Team Lead</h3>
@@ -49,10 +70,14 @@ export default function AboutPage({invert}) {
 										</span>
 									</div>
 								</div>
+								</Fade>
 							</div>
+							
+							
 							<div className="p-4 lg:w-1/2">
+							<Fade >
 								<div className={`h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ${invert?"invert":""}`}>
-									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/pradeep.jpeg"/>
+									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src={Pradeep}/>
 									<div className="flex-grow sm:pl-8">
 										<h2 className="title-font font-medium text-lg text-gray-600">Pradeep Kumar Rebbavarpu</h2>
 										<h3 className="text-gray-500 mb-3">Member</h3>
@@ -66,10 +91,14 @@ export default function AboutPage({invert}) {
 										</span>
 									</div>
 								</div>
+								</Fade>
 							</div>
+							
+							
 							<div className="p-4 lg:w-1/2">
+							<Fade>
 								<div className={`h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ${invert?"invert":""}`}>
-									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/suhana.jpeg"/>
+									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src={Suhana}/>
 									<div className="flex-grow sm:pl-8">
 										<h2 className="title-font font-medium text-lg text-gray-600">Suhana Shaik</h2>
 										<h3 className="text-gray-500 mb-3">Member</h3>
@@ -83,10 +112,14 @@ export default function AboutPage({invert}) {
 										</span>
 									</div>
 								</div>
+								</Fade>
 							</div>
+							
+							
 							<div className="p-4 lg:w-1/2">
+							<Fade>
 								<div className={`h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left ${invert?"invert":""}`}>
-									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src="/images/trishant.jpeg"/>
+									<Image placeholder="blur" alt="team" className={`${invert?"invert":""}flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4`} src={Trishant}/>
 									<div className="flex-grow sm:pl-8">
 										<h2 className="title-font font-medium text-lg text-gray-600">Trishant Kumar Talluri</h2>
 										<h3 className="text-gray-500 mb-3">Member</h3>
@@ -100,7 +133,9 @@ export default function AboutPage({invert}) {
 										</span>
 									</div>
 								</div>
+								</Fade>
 							</div>
+							
 						</div>
 					</div>
 				</section>
