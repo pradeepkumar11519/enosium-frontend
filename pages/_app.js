@@ -32,6 +32,7 @@ export default function App({ Component, pageProps }) {
   return(
     <div className={`${invert?"invert":""}`}>
       <Navbar invert={invert} setinvert={setinvert} />
+      <ToastContainer/>
       <LoadingBar
               color='#E11D48'
               progress={Progress}
@@ -40,7 +41,7 @@ export default function App({ Component, pageProps }) {
               waitingTime={200}
               onLoaderFinished={() => setProgress(0)}
             />
-      <ToastContainer/>
+      
       <Component CloseOffCanvasNavbar={CloseOffCanvasNavbar} setProgress={setProgress} loading={loading} setloading={setloading} invert={invert} {...pageProps} />
     </div>
   
